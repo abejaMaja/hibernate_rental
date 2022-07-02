@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url"></property> <!--TODO: zmienić adres połączenia-->
+        <property name="connection.username"/> <!--TODO: wypełnić nazwę użytkownika-->
+        <property name="connection.password"/> <!--TODO: wypełnić hasło-->
+<!--update dodaje przyrostowo -->
+        <!--create usuwa tabele i stawia na nowo -->
+        <!--create - drop ustawia tebele i kasuje na koniec-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+
+        <!-- DB schema will be updated if needed -->
+        <!-- Tu będą modele -->
+        <mapping class="pl.sda.arppl4.hibernatestore.model.Samochod"/>
+    </session-factory>
+</hibernate-configuration>
