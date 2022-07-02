@@ -1,4 +1,4 @@
-package util;
+package pl.sda.arppl4.hibernatestore.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
